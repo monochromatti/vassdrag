@@ -1,0 +1,16 @@
+[project]
+name = "vassdrag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "folium>=0.17.0",
+    "geopandas>=1.0.1",
+    "ipykernel>=6.29.5",
+    "ipython>=8.28.0",
+    "matplotlib>=3.9.2",
+    "pyproj>=3.7.0",
+    "rasterio>=1.4.1",
+    "shapely>=2.0.6",
+]
