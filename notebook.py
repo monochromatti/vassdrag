@@ -26,6 +26,8 @@ centroid = magasin_data.geometry.centroid
 magasin_data = magasin_data.to_crs(epsg=4326)
 centroid = centroid.to_crs(epsg=4326)
 
+magasin_data[["magNavn", "lrv_moh", "hrv_moh", "geometry"]]
+
 # %% Høydedata
 
 raster_overlays = []
@@ -77,4 +79,7 @@ folium.LayerControl().add_to(m)
 
 display(m)
 
-# %%
+# %% Holevatn
+
+holevatn_shape = magasin_data[magasin_data.magNavn == "HOLEVATN"].geometry.item()
+display(holevatn_shape)
